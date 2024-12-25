@@ -35,6 +35,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'A00CppInitMeasure/Classes/**/*'
   
+  s.ios.library = 'c++'
+  
   # s.resource_bundles = {
   #   'A00CppInitMeasure' => ['A00CppInitMeasure/Assets/*.png']
   # }
