@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)printStaticInitializerTimer;
 
+// ignoreTime: 忽略多少ms一下的数据，不进行统计，默认是 0.01ms
++ (void)printStaticInitializerIgnoreTime:(NSTimeInterval)ignoreTime;
+
 @end
 
 /*

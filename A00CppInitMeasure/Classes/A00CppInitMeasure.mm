@@ -50,6 +50,9 @@ static const struct mach_header **copyAllSelfDefinedImageHeader(unsigned int *ou
 static NSMutableArray *sInitInfos;
 static NSTimeInterval sSumInitTime;
 
+// 忽略多少ms一下的数据，不进行统计，默认是 0.01ms
+static NSTimeInterval _ignoreTime;
+
 using namespace std;
 #ifndef __LP64__
 typedef uint32_t MemoryType;
@@ -79,6 +82,10 @@ void myInitFunc_Initializer(int argc, const char* argv[], const char* envp[], co
     CFTimeInterval start = CFAbsoluteTimeGetCurrent();
     func(argc,argv,envp,apple,vars);
     CFTimeInterval end = CFAbsoluteTimeGetCurrent();
+    // 少于0，01ms的数据过滤掉
+    if (1000.0*(end - start) < _ignoreTime) {
+        return;
+    }
     sSumInitTime += 1000.0 * (end-start);
     
     Dl_info info;
@@ -133,10 +140,16 @@ static void hookModInitFunc() {
     sInitInfos = [NSMutableArray new];
     g_initializer = new std::vector<MemoryType>();
     g_cur_index = -1;
+    _ignoreTime = 0.01;
     hookModInitFunc();
 }
 
 + (void)printStaticInitializerTimer {
+    [self printStaticInitializerIgnoreTime:_ignoreTime];
+}
+
++ (void)printStaticInitializerIgnoreTime:(NSTimeInterval)ignoreTime {
+    _ignoreTime = ignoreTime;
     printf("\n\t\t\t\t\tTotal initializer time: %f ms", sSumInitTime);
     for (NSString *info in sInitInfos) {
         NSArray<NSString *> *temp = [info componentsSeparatedByString:@"="];

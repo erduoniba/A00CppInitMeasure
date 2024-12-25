@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A00CppInitMeasure'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '收集App启动，main之前的 C++ static initializers 的方法耗时工具。需要设置为静态库'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        0.1.1: 不统计低于指定时间的函数耗时
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/A00CppInitMeasure'
