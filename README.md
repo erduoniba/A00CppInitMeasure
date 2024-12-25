@@ -22,7 +22,7 @@ pod 'A00CppInitMeasure'
 
 ## Author
 
-erduoniba, denglibing3@jd.com
+denglibing, denglibing@gmail.com
 
 ## License
 
