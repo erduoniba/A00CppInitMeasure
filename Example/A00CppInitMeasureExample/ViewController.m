@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <A00CppInitMeasure/A00CppInitMeasure.h>
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [A00CppInitMeasure printStaticInitializerTimer];
 }
 
 

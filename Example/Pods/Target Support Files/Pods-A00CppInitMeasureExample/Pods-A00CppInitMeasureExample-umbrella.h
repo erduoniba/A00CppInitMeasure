@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_A00CppInitMeasure_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_A00CppInitMeasure_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_A00CppInitMeasureExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_A00CppInitMeasureExampleVersionString[];
 

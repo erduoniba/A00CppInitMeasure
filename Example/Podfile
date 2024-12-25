@@ -1,5 +1,5 @@
 use_frameworks!
-target 'A00CppInitMeasure_Tests' do
+target 'A00CppInitMeasureExample' do
   pod 'A00CppInitMeasure', :path => '../'
   
   
