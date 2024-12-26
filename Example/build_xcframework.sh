@@ -51,7 +51,7 @@ build_xcframework() {
     xcodebuild -create-xcframework \
       -framework build/ios_devices.xcarchive/Products/Library/Frameworks/$1.framework \
       -framework build/ios_simulator.xcarchive/Products/Library/Frameworks/$1.framework \
-      -output build/$1.xcframework
+      -output $FRAMEWORK_PATH/$1.xcframework
 
     # Cleanup
     rm -rf build
