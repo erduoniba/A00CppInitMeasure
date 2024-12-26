@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3982C5F22718E97E3FD6E0C64E05DDFC"
-               BuildableName = "A00CppInitMeasure.framework"
+               BuildableName = "A00CppInitMeasure"
                BlueprintName = "A00CppInitMeasure"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3982C5F22718E97E3FD6E0C64E05DDFC"
-            BuildableName = "A00CppInitMeasure.framework"
+            BuildableName = "A00CppInitMeasure"
             BlueprintName = "A00CppInitMeasure"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

@@ -1,5 +1,5 @@
 PODS:
-  - A00CppInitMeasure (0.1.0)
+  - A00CppInitMeasure (0.1.1)
 
 DEPENDENCIES:
   - A00CppInitMeasure (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  A00CppInitMeasure: f4c0c818ee40aa7c0fe89ba898809ad6bdb783af
+  A00CppInitMeasure: 0c39e1c20b6e908041c54386e94cd1f0b2720b03
 
 PODFILE CHECKSUM: 88492b52d7856ba524afb063e648cb90f698cd78
 

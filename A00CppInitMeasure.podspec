@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A00CppInitMeasure'
-  s.version          = '0.1.1'
+  s.version          = '1.0.1'
   s.summary          = '收集App启动，main之前的 C++ static initializers 的方法耗时工具。需要设置为静态库'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
                         0.1.1: 不统计低于指定时间的函数耗时
+                        1.0.1: 添加自动打包xcframework脚本，默认支持以动态库被App依赖
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/A00CppInitMeasure'
@@ -32,10 +33,13 @@ Pod::Spec.new do |s|
   
   # 设置为静态库
   s.static_framework = true
-
-  s.source_files = 'A00CppInitMeasure/Classes/**/*'
   
-  s.ios.library = 'c++'
+  if ENV['IS_SOURCE']
+    s.source_files = 'A00CppInitMeasure/Classes/**/*'
+    s.ios.library = 'c++'
+  else
+      s.vendored_frameworks = 'Example/build/A00CppInitMeasure.xcframework'
+  end
   
   # s.resource_bundles = {
   #   'A00CppInitMeasure' => ['A00CppInitMeasure/Assets/*.png']
