@@ -33,10 +33,10 @@ Pod::Spec.new do |s|
   
   # 设置为静态库
   s.static_framework = true
+  s.ios.library = 'c++'
   
   if ENV['IS_SOURCE']
     s.source_files = 'A00CppInitMeasure/Classes/**/*'
-    s.ios.library = 'c++'
   else
       s.vendored_frameworks = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework'
   end
