@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A00CppInitMeasure'
-  s.version          = '1.0.1'
+  s.version          = '1.0.1-beta1'
   s.summary          = '收集App启动，main之前的 C++ static initializers 的方法耗时工具。需要设置为静态库'
 
 # This description is used to generate tags and improve search results.
@@ -36,10 +36,12 @@ Pod::Spec.new do |s|
   s.ios.library = 'c++'
   
   if ENV['IS_SOURCE']
-    s.source_files = 'A00CppInitMeasure/Classes/**/*'
+      s.source_files = 'A00CppInitMeasure/Classes/**/*'
   else
       s.vendored_frameworks = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework'
   end
+  
+  s.preserve_paths = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework', 'A00CppInitMeasure/Classes/**/*'
   
   # s.resource_bundles = {
   #   'A00CppInitMeasure' => ['A00CppInitMeasure/Assets/*.png']

@@ -19,8 +19,8 @@
     "ios": "9.0"
   },
   "static_framework": true,
-  "source_files": "A00CppInitMeasure/Classes/**/*",
   "ios": {
     "libraries": "c++"
-  }
+  },
+  "source_files": "A00CppInitMeasure/Classes/**/*"
 }
