@@ -2,6 +2,7 @@
 
 WORKSPACE_NAME="A00CppInitMeasure.xcworkspace"
 FRAMEWORK_NAME="A00CppInitMeasure"
+FRAMEWORK_PATH="../$FRAMEWORK_NAME/Frameworks"
 
 # Cleanup
 rm -rf build
@@ -52,9 +53,8 @@ build_xcframework() {
       -framework build/ios_simulator.xcarchive/Products/Library/Frameworks/$1.framework \
       -output build/$1.xcframework
 
-    # Remove archives
-    rm -rf build/ios_devices.xcarchive
-    rm -rf build/ios_simulator.xcarchive
+    # Cleanup
+    rm -rf build
 
     if [ $? -ne 0 ]; then
         echo "Create $1 XCFramework failed. Exiting..."

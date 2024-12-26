@@ -6,22 +6,14 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		3982C5F22718E97E3FD6E0C64E05DDFC /* A00CppInitMeasure */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 085F65E14F149048D4C79DE0DFD179EC /* Build configuration list for PBXAggregateTarget "A00CppInitMeasure" */;
-			buildPhases = (
-				62AA39F7A90CA143A8F90C704F20A7D5 /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = A00CppInitMeasure;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
+		006B2B712073526C963CFACF11EB871E /* A00CppInitMeasure.h in Headers */ = {isa = PBXBuildFile; fileRef = 8278AE0484AB6B0692E625DD982E33ED /* A00CppInitMeasure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D640E12320C3E17C00245D8E81DA776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		7D32982284A5032D029980E7C79161F3 /* A00CppInitMeasure-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECAE760180848DD03C930AA9EBE8A /* A00CppInitMeasure-dummy.m */; };
+		8AD5330CE9D1A9D48B4502AF1EB29038 /* A00CppInitMeasure-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61EFB24310D723C2C907034D2CD61BDA /* A00CppInitMeasure-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		929707B864A5F71E3590AFCF421EF368 /* Pods-A00CppInitMeasureExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE538F9B633029453E38CB207A1B069 /* Pods-A00CppInitMeasureExample-dummy.m */; };
+		A9F5C4377C28527E56D77F1472214A2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		B83B8BA76C8A8DBFE263CFDA8C6ADF73 /* A00CppInitMeasure.mm in Sources */ = {isa = PBXBuildFile; fileRef = 520E14FA31F58E7A62719A0B8E790BEB /* A00CppInitMeasure.mm */; };
 		EDD8F111101C84DCECE57607D6BCE674 /* Pods-A00CppInitMeasureExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C401D23245C50B451E2F835796095F15 /* Pods-A00CppInitMeasureExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -37,23 +29,29 @@
 
 /* Begin PBXFileReference section */
 		001CB1B45D84688700A8507C4EC99E1D /* Pods-A00CppInitMeasureExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A00CppInitMeasureExample.release.xcconfig"; sourceTree = "<group>"; };
-		221A2C5227B5261C81091C77DB7288EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		08E6D1BA9B2C5F657F4B5C1038F310FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0FB0D945E1E31F6F4614B46F2D1BD8FD /* A00CppInitMeasure.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = A00CppInitMeasure.modulemap; sourceTree = "<group>"; };
+		280691D0EFE7D16344B22A83F441A888 /* A00CppInitMeasure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = A00CppInitMeasure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2EE538F9B633029453E38CB207A1B069 /* Pods-A00CppInitMeasureExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-A00CppInitMeasureExample-dummy.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42F91354FD4C14238581B40FBA62ED4E /* A00CppInitMeasure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A00CppInitMeasure.debug.xcconfig; sourceTree = "<group>"; };
+		4C8ECAE760180848DD03C930AA9EBE8A /* A00CppInitMeasure-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "A00CppInitMeasure-dummy.m"; sourceTree = "<group>"; };
+		520E14FA31F58E7A62719A0B8E790BEB /* A00CppInitMeasure.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = A00CppInitMeasure.mm; path = A00CppInitMeasure/Classes/A00CppInitMeasure.mm; sourceTree = "<group>"; };
+		521368E77BF58066F248CCD0FF1B49DE /* A00CppInitMeasure-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "A00CppInitMeasure-prefix.pch"; sourceTree = "<group>"; };
+		5ACDBE94107B2708328CE5299188DE85 /* A00CppInitMeasure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A00CppInitMeasure.release.xcconfig; sourceTree = "<group>"; };
+		61EFB24310D723C2C907034D2CD61BDA /* A00CppInitMeasure-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "A00CppInitMeasure-umbrella.h"; sourceTree = "<group>"; };
 		63A92B22B58833C2784C384CF9AB222B /* Pods-A00CppInitMeasureExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-A00CppInitMeasureExample-Info.plist"; sourceTree = "<group>"; };
 		73DAAE9B64FA7384F05E7621D620079C /* Pods-A00CppInitMeasureExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A00CppInitMeasureExample.debug.xcconfig"; sourceTree = "<group>"; };
-		822100414DEF2AB9DD17929D348FF62D /* A00CppInitMeasure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A00CppInitMeasure.release.xcconfig; sourceTree = "<group>"; };
-		83AA2A55702A1C6148B61B85FED24B55 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		775A1E396A3C78535725761447E66B6C /* A00CppInitMeasure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A00CppInitMeasure.debug.xcconfig; sourceTree = "<group>"; };
+		7BE7C28B268DB0BCEFC0777770622955 /* A00CppInitMeasure-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "A00CppInitMeasure-Info.plist"; sourceTree = "<group>"; };
+		8278AE0484AB6B0692E625DD982E33ED /* A00CppInitMeasure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A00CppInitMeasure.h; path = A00CppInitMeasure/Classes/A00CppInitMeasure.h; sourceTree = "<group>"; };
 		9B8D66BBCB38FA437FACAFA7B447F5B8 /* Pods-A00CppInitMeasureExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-A00CppInitMeasureExample.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A97750E7808D064051F42F86D6304CB1 /* Pods-A00CppInitMeasureExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-A00CppInitMeasureExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2495153CFC1CF901FD719531066C524 /* Pods-A00CppInitMeasureExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-A00CppInitMeasureExample"; path = Pods_A00CppInitMeasureExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FE908573C309D7520417378481868B /* Pods-A00CppInitMeasureExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-A00CppInitMeasureExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BF94F34DE60A89224926897D19AF5CB7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C401D23245C50B451E2F835796095F15 /* Pods-A00CppInitMeasureExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-A00CppInitMeasureExample-umbrella.h"; sourceTree = "<group>"; };
-		D7814B7E2771A2277D31FEE37E6638B3 /* A00CppInitMeasure-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "A00CppInitMeasure-xcframeworks.sh"; sourceTree = "<group>"; };
-		DE5AD0015B1C25EAA01A61B73886DF65 /* A00CppInitMeasure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = A00CppInitMeasure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F41A462CF39D48B0133E24F5318E8BA1 /* A00CppInitMeasure.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = A00CppInitMeasure.xcframework; path = Example/build/A00CppInitMeasure.xcframework; sourceTree = "<group>"; };
+		DE04437182F8EF7342E055976341B54E /* A00CppInitMeasure */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = A00CppInitMeasure; path = A00CppInitMeasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +63,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF8501ADB5E0DBE105FA0579CE2EEC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F5C4377C28527E56D77F1472214A2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17C200A2E9A47F4E08EB7C6BBBCD39DE /* Frameworks */ = {
+		0AC65DA79C348BB6A466479DBEDFF016 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F41A462CF39D48B0133E24F5318E8BA1 /* A00CppInitMeasure.xcframework */,
+				280691D0EFE7D16344B22A83F441A888 /* A00CppInitMeasure.podspec */,
+				BF94F34DE60A89224926897D19AF5CB7 /* LICENSE */,
+				08E6D1BA9B2C5F657F4B5C1038F310FC /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1385358E73A72A446E0A51966E0CC708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE04437182F8EF7342E055976341B54E /* A00CppInitMeasure */,
+				B2495153CFC1CF901FD719531066C524 /* Pods-A00CppInitMeasureExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2055C579097453C76492B75EA73AA6B5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9C2ACBA80789069FFBE4FCB0624AC /* A00CppInitMeasure */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		2599F9FB1EA2657A86352739F637CDEF /* Targets Support Files */ = {
@@ -84,33 +109,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2941F8E1689823B0CAEBF8B34A413EE0 /* Development Pods */ = {
+		352AD6A6F5720CA149099B40FC531EE4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C6D6E5F997EB3928712980C314870E68 /* A00CppInitMeasure */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		312CFC6F4BD1EB9DF37A7A0BB950EFF2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7814B7E2771A2277D31FEE37E6638B3 /* A00CppInitMeasure-xcframeworks.sh */,
-				42F91354FD4C14238581B40FBA62ED4E /* A00CppInitMeasure.debug.xcconfig */,
-				822100414DEF2AB9DD17929D348FF62D /* A00CppInitMeasure.release.xcconfig */,
+				0FB0D945E1E31F6F4614B46F2D1BD8FD /* A00CppInitMeasure.modulemap */,
+				4C8ECAE760180848DD03C930AA9EBE8A /* A00CppInitMeasure-dummy.m */,
+				7BE7C28B268DB0BCEFC0777770622955 /* A00CppInitMeasure-Info.plist */,
+				521368E77BF58066F248CCD0FF1B49DE /* A00CppInitMeasure-prefix.pch */,
+				61EFB24310D723C2C907034D2CD61BDA /* A00CppInitMeasure-umbrella.h */,
+				775A1E396A3C78535725761447E66B6C /* A00CppInitMeasure.debug.xcconfig */,
+				5ACDBE94107B2708328CE5299188DE85 /* A00CppInitMeasure.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/A00CppInitMeasure";
-			sourceTree = "<group>";
-		};
-		3F2863BC3E181671E1E2BEA0F3189332 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DE5AD0015B1C25EAA01A61B73886DF65 /* A00CppInitMeasure.podspec */,
-				83AA2A55702A1C6148B61B85FED24B55 /* LICENSE */,
-				221A2C5227B5261C81091C77DB7288EB /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		AA2FD1D4D29036532B064A73AD47D9C7 /* Pods-A00CppInitMeasureExample */ = {
@@ -129,12 +140,13 @@
 			path = "Target Support Files/Pods-A00CppInitMeasureExample";
 			sourceTree = "<group>";
 		};
-		C6D6E5F997EB3928712980C314870E68 /* A00CppInitMeasure */ = {
+		ACB9C2ACBA80789069FFBE4FCB0624AC /* A00CppInitMeasure */ = {
 			isa = PBXGroup;
 			children = (
-				17C200A2E9A47F4E08EB7C6BBBCD39DE /* Frameworks */,
-				3F2863BC3E181671E1E2BEA0F3189332 /* Pod */,
-				312CFC6F4BD1EB9DF37A7A0BB950EFF2 /* Support Files */,
+				8278AE0484AB6B0692E625DD982E33ED /* A00CppInitMeasure.h */,
+				520E14FA31F58E7A62719A0B8E790BEB /* A00CppInitMeasure.mm */,
+				0AC65DA79C348BB6A466479DBEDFF016 /* Pod */,
+				352AD6A6F5720CA149099B40FC531EE4 /* Support Files */,
 			);
 			name = A00CppInitMeasure;
 			path = ../..;
@@ -144,9 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2941F8E1689823B0CAEBF8B34A413EE0 /* Development Pods */,
+				2055C579097453C76492B75EA73AA6B5 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				EF7069AD8E8E802F30CB4AB8A362722E /* Products */,
+				1385358E73A72A446E0A51966E0CC708 /* Products */,
 				2599F9FB1EA2657A86352739F637CDEF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -167,17 +179,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EF7069AD8E8E802F30CB4AB8A362722E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B2495153CFC1CF901FD719531066C524 /* Pods-A00CppInitMeasureExample */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		71613A40EE7147AF7F8222CE8D08ED8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006B2B712073526C963CFACF11EB871E /* A00CppInitMeasure.h in Headers */,
+				8AD5330CE9D1A9D48B4502AF1EB29038 /* A00CppInitMeasure-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC4D3962A33488F8BF2FC1730FD277C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +202,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3982C5F22718E97E3FD6E0C64E05DDFC /* A00CppInitMeasure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B008ABD715FEC95B74407B34DA072A /* Build configuration list for PBXNativeTarget "A00CppInitMeasure" */;
+			buildPhases = (
+				71613A40EE7147AF7F8222CE8D08ED8D /* Headers */,
+				54C65FC59C60CBB090984DD176E9382E /* Sources */,
+				2CF8501ADB5E0DBE105FA0579CE2EEC9 /* Frameworks */,
+				28745D01C1CB4B0BF6E9B0CAB207E8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = A00CppInitMeasure;
+			productName = A00CppInitMeasure;
+			productReference = DE04437182F8EF7342E055976341B54E /* A00CppInitMeasure */;
+			productType = "com.apple.product-type.framework";
+		};
 		B288A8FCBE248A41E7332A7C2DC4D6E1 /* Pods-A00CppInitMeasureExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6689E0E7EDFA0A0140116E22EB85CC0 /* Build configuration list for PBXNativeTarget "Pods-A00CppInitMeasureExample" */;
@@ -228,7 +259,7 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = EF7069AD8E8E802F30CB4AB8A362722E /* Products */;
+			productRefGroup = 1385358E73A72A446E0A51966E0CC708 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -246,28 +277,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		62AA39F7A90CA143A8F90C704F20A7D5 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+		28745D01C1CB4B0BF6E9B0CAB207E8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/A00CppInitMeasure/A00CppInitMeasure-xcframeworks.sh",
-				"${PODS_ROOT}/../build/A00CppInitMeasure.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/A00CppInitMeasure/A00CppInitMeasure.framework",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/A00CppInitMeasure/A00CppInitMeasure-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0610C722ABE21A729BAF4C1778BB0F4B /* Sources */ = {
@@ -275,6 +292,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				929707B864A5F71E3590AFCF421EF368 /* Pods-A00CppInitMeasureExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C65FC59C60CBB090984DD176E9382E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83B8BA76C8A8DBFE263CFDA8C6ADF73 /* A00CppInitMeasure.mm in Sources */,
+				7D32982284A5032D029980E7C79161F3 /* A00CppInitMeasure-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,25 +316,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		332F3ABCBEC5F0555517E12AECD96DC4 /* Release */ = {
+		48B6E02249539D46B80FDC2FC257EC46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 822100414DEF2AB9DD17929D348FF62D /* A00CppInitMeasure.release.xcconfig */;
+			baseConfigurationReference = 775A1E396A3C78535725761447E66B6C /* A00CppInitMeasure.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_MODULE_NAME = A00CppInitMeasure;
+				PRODUCT_NAME = A00CppInitMeasure;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		5B4C61B46A5300DD366AAF81AA3F0B60 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -415,6 +460,46 @@
 			};
 			name = Release;
 		};
+		73E220C1E3E27CD0DF0571B23AE2AB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACDBE94107B2708328CE5299188DE85 /* A00CppInitMeasure.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/A00CppInitMeasure/A00CppInitMeasure.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_MODULE_NAME = A00CppInitMeasure;
+				PRODUCT_NAME = A00CppInitMeasure;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DC285C87C68B1CD0F16E6ACB555D6F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,25 +568,6 @@
 			};
 			name = Debug;
 		};
-		E4482B8AE0295642E6E04B603A0B2E80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42F91354FD4C14238581B40FBA62ED4E /* A00CppInitMeasure.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		F107D12E69B485872821147FFD206B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73DAAE9B64FA7384F05E7621D620079C /* Pods-A00CppInitMeasureExample.debug.xcconfig */;
@@ -546,20 +612,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		085F65E14F149048D4C79DE0DFD179EC /* Build configuration list for PBXAggregateTarget "A00CppInitMeasure" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4482B8AE0295642E6E04B603A0B2E80 /* Debug */,
-				332F3ABCBEC5F0555517E12AECD96DC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC285C87C68B1CD0F16E6ACB555D6F43 /* Debug */,
 				72C22AC032C2D45C9ABC956262FDD9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69B008ABD715FEC95B74407B34DA072A /* Build configuration list for PBXNativeTarget "A00CppInitMeasure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48B6E02249539D46B80FDC2FC257EC46 /* Debug */,
+				73E220C1E3E27CD0DF0571B23AE2AB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

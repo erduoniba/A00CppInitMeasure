@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     s.source_files = 'A00CppInitMeasure/Classes/**/*'
     s.ios.library = 'c++'
   else
-      s.vendored_frameworks = 'Example/build/A00CppInitMeasure.xcframework'
+      s.vendored_frameworks = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework'
   end
   
   # s.resource_bundles = {
