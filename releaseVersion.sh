@@ -19,7 +19,13 @@ function releaseVersion() {
 # 第一步，修改好代码，记得修正好 podspec 文件中的 tag
 
 # 第二步，执行自动打二进制包脚本
-sh Example/build_xcframework.sh
+cd Example
+sh build_xcframework.sh
+if [ $? -ne 0 ]; then
+    echo "打包失败，退出"
+    exit 1
+fi
 
 # 第三步，提交代码，添加tag，发布
+cd ..
 releaseVersion
