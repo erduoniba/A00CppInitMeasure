@@ -55,9 +55,7 @@ Pod::Spec.new do |s|
       # 默认是framework模式
       s.default_subspec = 'Framework'
   end
-  
-  s.preserve_paths = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework', 'A00CppInitMeasure/Classes/**/*'
-  
+    
   # s.resource_bundles = {
   #   'A00CppInitMeasure' => ['A00CppInitMeasure/Assets/*.png']
   # }

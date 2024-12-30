@@ -23,10 +23,6 @@
     "libraries": "c++"
   },
   "default_subspecs": "Source",
-  "preserve_paths": [
-    "A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework",
-    "A00CppInitMeasure/Classes/**/*"
-  ],
   "subspecs": [
     {
       "name": "Framework",
