@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A00CppInitMeasure'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '收集App启动，main之前的 C++ static initializers 的方法耗时工具。需要设置为静态库'
 
 # This description is used to generate tags and improve search results.
@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
                         0.1.1: 不统计低于指定时间的函数耗时
                         1.0.1: 添加自动打包xcframework脚本，默认支持以动态库被App依赖
                         1.0.2: 支持单仓下，源码和二进制切换
+                        1.0.3: 添加自动打包二进制及发布脚本
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/A00CppInitMeasure'
@@ -30,7 +31,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/erduoniba/A00CppInitMeasure.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   
   # 设置为静态库
   s.static_framework = true
