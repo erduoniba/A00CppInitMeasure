@@ -1,16 +1,16 @@
 PODS:
-  - A00CppInitMeasure (1.0.1)
+  - A00CppInitMeasure/Source (1.0.2)
 
 DEPENDENCIES:
-  - A00CppInitMeasure (from `../`)
+  - A00CppInitMeasure/Source (from `../`)
 
 EXTERNAL SOURCES:
   A00CppInitMeasure:
     :path: "../"
 
 SPEC CHECKSUMS:
-  A00CppInitMeasure: 9cda8332784b40f01ed88434ab7818a44649ef8a
+  A00CppInitMeasure: 1846cf5ba08e519507821ecfbe54f7bd167be7fa
 
-PODFILE CHECKSUM: 88492b52d7856ba524afb063e648cb90f698cd78
+PODFILE CHECKSUM: b51ecba90155704c02d76c8ce95063ed2ce2aae7
 
 COCOAPODS: 1.16.1

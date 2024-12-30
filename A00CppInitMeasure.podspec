@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'A00CppInitMeasure'
-  s.version          = '1.0.1-beta1'
+  s.version          = '1.0.2'
   s.summary          = '收集App启动，main之前的 C++ static initializers 的方法耗时工具。需要设置为静态库'
 
 # This description is used to generate tags and improve search results.
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         0.1.1: 不统计低于指定时间的函数耗时
                         1.0.1: 添加自动打包xcframework脚本，默认支持以动态库被App依赖
+                        1.0.2: 支持单仓下，源码和二进制切换
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/A00CppInitMeasure'
@@ -35,10 +36,23 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.ios.library = 'c++'
   
+  # Framework模式
+  s.subspec 'Framework' do |framework|
+    # https://github.com/CocoaPods/CocoaPods/issues/7942
+    framework.vendored_frameworks = "A00CppInitMeasure/Frameworks/A00CppInitMeasure_#{s.version.to_s}/A00CppInitMeasure.xcframework"
+  end
+  
+  # Source模式
+  s.subspec 'Source' do |source|
+    source.source_files = 'A00CppInitMeasure/Classes/**/*'
+  end
+  
+  # 只支持Podfile直接依赖该 .podspecs 文件，其他方式提交后会变成podspec.json，不再支持if判断
   if ENV['IS_SOURCE']
-      s.source_files = 'A00CppInitMeasure/Classes/**/*'
+      s.default_subspec = 'Source'
   else
-      s.vendored_frameworks = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework'
+      # 默认是framework模式
+      s.default_subspec = 'Framework'
   end
   
   s.preserve_paths = 'A00CppInitMeasure/Frameworks/A00CppInitMeasure.xcframework', 'A00CppInitMeasure/Classes/**/*'
